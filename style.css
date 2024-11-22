@@ -1,0 +1,169 @@
+body{
+    background-color: rgb(40 54 24);
+}
+
+.container{ 
+    width:100%;
+    margin: 20px auto;
+}
+
+h1,h2,h3{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: rgb(96, 108, 56);
+}
+
+#title-name{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+    2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 50px;
+}
+
+
+p{
+    font-family: "Source Code Pro";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    line-height: 1.6;
+    /* margin: 35px; */
+    color: rgb(188 108 37);
+    
+    /* background-color: rgb(40 54 24); */
+}
+.txt-quote{
+    box-shadow: inset 2px 2px 8px rgba(184, 176, 127, 0.9);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.screen{
+    background-color: rgb(254 250 224);
+    height: 95vh; /* 100% de la altura de la pantalla */
+    width: 100%; /* 100% del ancho */
+    display: flex;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    box-shadow: 0px 4px 8px rgba(76, 76, 76, 0.8); /* Sombra en todo el box */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    margin: 10px;
+    gap:10px;
+}
+
+#profile-pic{
+    width: 650px; /* Ajusta el ancho a 200px */
+    box-shadow: 4px 4px 8px rgba(76, 76, 76, 0.8);
+    border-radius: 4px;
+    margin: 10px;
+}
+
+
+
+.txt{
+    /* padding: 5vh; */
+    flex: 1; /* Hace que ocupe el resto del espacio disponible */
+    max-width: 80%; /* Limita el ancho máximo si es necesario */
+    margin: 30px;
+    text-align: center; /* Centrar el contenido de texto */
+}
+
+.title{
+    transform: rotate(-90deg); /* Rotates the text */
+    flex: 0 0 auto; /* Evita que el título se redimensione */
+    margin: 0; /* Elimina márgenes por defecto */
+    text-align: left; 
+    /* background-color: rgb(221 161 94); */
+    padding: 15px;
+    border-radius: 8px;
+    /* border-radius: 2px; */
+    border: 5px solid rgb(221 161 94); /* Color y grosor del borde */
+    box-shadow: 4px 4px 8px rgba(173, 172, 172, 0.8);
+}
+
+#full-name{
+    /* background-color:rgb(40 54 24); */
+    padding: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+    font-size: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* .txt h2{
+    padding: 30px;
+    /* background-color: ; */
+
+.icono {
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+.card{
+    margin: 20px;
+    padding: 50px;
+    /* background-color: aquamarine; */
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
+}
+
+#timeline{
+    height: 700px;
+    margin-left: 70px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0; 
+    margin: 50px 0;
+    box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
+    border-radius: 8px;
+    /* margin: 80px;  */
+}
+#logo-escuela{
+    width: 100px;
+    margin: 20px;
+}
+#logo-ditella{
+    width: 300px;
+    margin: 20px;
+}
+
+.pic-hobbies{
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
+}
+
+
+/* Smartphone: Adjust for small screens */
+@media (max-width:600px) {
+    .screen{
+        flex-direction: column;
+    }
+    #profile-pic{
+        width: 300px;
+    }
+    .title{
+        transform: rotate(0deg); /* Rotates the text */
+    }
+    #full-name{
+        /* background-color:rgb(40 54 24); */
+        padding: 30px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 2s ease-in-out;
+        font-size: 30px;
+    }
+    
+}
