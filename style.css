@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(40 54 24);
+    background-color: rgb(74, 74, 74);
 }
 
 .container{ 
@@ -7,12 +7,12 @@ body{
     margin: 20px auto;
 }
 
-h1,h2,h3{
-    font-family: "Lexend", sans-serif;
+h1,h2{
+    font-family: "Marcellus", Roboto, sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     letter-spacing: 5px;
-    color: rgb(96, 108, 56);
+    color: rgb(0, 0, 0);
 }
 
 #title-name{
@@ -21,69 +21,57 @@ h1,h2,h3{
     font-size: 50px;
 }
 
-
-p{
-    font-family: "Source Code Pro";
+p,h3{
+    font-family: "Jost", Roboto, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.6;
-    /* margin: 35px; */
-    color: rgb(188 108 37);
-    
-    /* background-color: rgb(40 54 24); */
+    padding: 5px;
+    color: rgb(143 143 143);
 }
+
 .txt-quote{
-    box-shadow: inset 2px 2px 8px rgba(184, 176, 127, 0.9);
-    border-radius: 8px;
+    box-shadow: inset 2px 2px 8px rgba(177, 177, 177, 0.9);
     padding: 15px;
 }
 
 .screen{
-    background-color: rgb(254 250 224);
-    height: 95vh; /* 100% de la altura de la pantalla */
-    width: 100%; /* 100% del ancho */
+    background-color: rgb(229 229 229);
+    height: 95vh; 
     display: flex;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    box-shadow: 0px 4px 8px rgba(76, 76, 76, 0.8); /* Sombra en todo el box */
-    border-radius: 8px; /* Bordes redondeados opcionales */
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0px 4px 8px rgba(76, 76, 76, 0.8); 
     margin: 10px;
     gap:10px;
 }
 
 #profile-pic{
-    width: 650px; /* Ajusta el ancho a 200px */
+    width: 650px;
     box-shadow: 4px 4px 8px rgba(76, 76, 76, 0.8);
-    border-radius: 4px;
     margin: 10px;
 }
 
-
-
 .txt{
-    /* padding: 5vh; */
-    flex: 1; /* Hace que ocupe el resto del espacio disponible */
-    max-width: 80%; /* Limita el ancho máximo si es necesario */
+    flex: 1; 
+    max-width: 80%; 
     margin: 30px;
-    text-align: center; /* Centrar el contenido de texto */
+    text-align: center; 
 }
 
 .title{
-    transform: rotate(-90deg); /* Rotates the text */
-    flex: 0 0 auto; /* Evita que el título se redimensione */
-    margin: 0; /* Elimina márgenes por defecto */
+    transform: rotate(-90deg); 
+    flex: 0 0 auto; 
+    margin: 0; 
     text-align: left; 
-    /* background-color: rgb(221 161 94); */
     padding: 15px;
-    border-radius: 8px;
-    /* border-radius: 2px; */
-    border: 5px solid rgb(221 161 94); /* Color y grosor del borde */
-    box-shadow: 4px 4px 8px rgba(173, 172, 172, 0.8);
+    border: 1px solid rgb(192 192 192); 
+    background-color: rgb(67, 74, 55);
+    color: white;
 }
 
 #full-name{
-    /* background-color:rgb(40 54 24); */
-    padding: 60px;
+    padding: 30px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     animation: fadeIn 2s ease-in-out;
     font-size: 30px;
@@ -98,26 +86,20 @@ p{
     }
 }
 
-/* .txt h2{
-    padding: 30px;
-    /* background-color: ; */
-
 .icono {
-    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
-    width: 80px; /* Ajusta el tamaño de la imagen */
-    margin-right: 8px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle;
+    width: 110px; 
+    margin: 0 5px;
 }
 
 .card{
     margin: 20px;
-    padding: 50px;
-    /* background-color: aquamarine; */
-    border-radius: 8px;
+    padding: 30px;
     box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
 }
 
 #timeline{
-    height: 700px;
+    height: 650px;
     margin-left: 70px;
 }
 
@@ -128,9 +110,8 @@ p{
     padding: 25px 0; 
     margin: 50px 0;
     box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
-    border-radius: 8px;
-    /* margin: 80px;  */
 }
+
 #logo-escuela{
     width: 100px;
     margin: 20px;
@@ -141,29 +122,179 @@ p{
 }
 
 .pic-hobbies{
-    width: 300px;
-    border-radius: 8px;
+    width: 200px;
+    margin: 5px;
     box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
 }
 
+.item-left, .item-right{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 600px;
+    padding: 0 20px;
+}
 
-/* Smartphone: Adjust for small screens */
-@media (max-width:600px) {
+.item-left{
+    margin:0 30px;
+}
+
+.item-right{
+    margin-right: 50px;
+}
+
+form {
+    width: 500px;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 20px;
+    font-family: "Jost", Roboto, sans-serif;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
+    color: #333;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #ccc;
+}
+
+input[type="submit"] {
+    background-color:  rgb(115, 127, 94);
+    color: #fff;
+    border: none;
+    box-shadow: 4px 5px rgba(173, 172, 172, 0.2);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family:"Marcellus", Roboto, sans-serif ;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(67, 74, 55) ;
+}
+
+input[type="text"]:focus, 
+textarea:focus {
+  border: 2px solid rgb(115, 127, 94);
+  outline: none; 
+  box-shadow: 0 0 5px rgba(67, 74, 55, 0.5); 
+}
+
+.github-icon{
+    margin: 0 30px;
+}
+
+.github-icon svg {
+    transition: fill 0.3s ease; 
+    fill: #5F5F5F; 
+}
+
+.github-icon:hover svg {    
+    fill: #2c2c2c; 
+}
+
+.gmail-icon svg {
+    transition: fill 0.3s ease, background-color 0.3s ease; 
+}
+
+.gmail-icon:hover svg path:first-child {
+    fill:  #2c2c2c; 
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    padding: auto;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-50px); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+}
+
+.-landing {
+    opacity: 0; 
+    animation: slideInFromTop 1s ease-out forwards;
+}
+
+.-landing .txt, .-landing h1, .-landing p {
+    animation: slideInFromTop 1s ease-out forwards;
+    opacity: 0; 
+    animation-delay: 0.2s; 
+}
+
+@media (max-width:700px) {
     .screen{
         flex-direction: column;
+        height: auto;
+        padding: 20px;
     }
+    
     #profile-pic{
-        width: 300px;
+        width: 250px;
+    }
+    .h1, .h2{
+        font-size: medium;
+    }
+    .p, .h3{
+        font-size: small;
     }
     .title{
-        transform: rotate(0deg); /* Rotates the text */
+        transform: rotate(0deg); 
+        font-size: medium;
     }
     #full-name{
-        /* background-color:rgb(40 54 24); */
-        padding: 30px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         animation: fadeIn 2s ease-in-out;
-        font-size: 30px;
+    }
+    .icono{
+        width: 50px;
+    }
+
+    #timeline{
+        height: 450px;
+        transform: rotate(-90deg);
+        margin: 0;
+    }
+    .item{
+        flex-direction: column-reverse;
+        width: 500px;
+        padding: 10px;
+    }
+    .-item{
+        display: flex;
+        gap: 10px;
+    }
+    #logo-escuela{
+        width: 50px;
+        margin: 20px;
+    }
+    #logo-ditella{
+        width: 100px;
+        margin: 20px;
     }
     
 }

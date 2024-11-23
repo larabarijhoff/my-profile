@@ -8,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;family=Marcellus&amp;display=swap" rel="stylesheet">
 	<link href="style.css" rel="stylesheet"> 
 </head>
 <body>
@@ -29,7 +29,7 @@
 		<div class="screen -aboutme"> 
 			<h1 class="title"> ABOUT ME</h1>
 			<div class="txt">
-				<h2 id="full-name"> MY FULL NAME IS LARA STEFANIA BARIJHOFF</h2>
+				<h2 id="full-name"> My full name is Lara Stefania Barijhoff</h2>
 
 				<h3>Born the 28th of October, 2003... </h3>
 				<h3> in Buenos Aires, Argentina. <img src="./images/arg-flag.svg" alt="icono" class="icono"></h3> <!-- bandera de arg-->
@@ -47,13 +47,13 @@
 			<div class="txt">
 				<div class="card">
 					<h2> <img src="./images/symbol-code.svg" alt="icono" class="icono"> Code </h2> <!-- icono de codigo-->
-					<p> - Experienced in Python, C++ and Figma  </p>
-					<p> - Competent in HTML, CSS and JavaScript</p>
+					<p> - Experienced in Python, C++ and Figma  <img src="./images/logo-experienced.svg" class="icono"> </p>
+					<p> - Competent in HTML, CSS and JavaScript <img src="./images/logo-competent.svg" class="icono"></p>
 				</div>
 				<div class="card"> 
 					<h2> <img src="./images/symbol-language.svg" alt="icono" class="icono"> Languages</h2> <!-- icono de idiomas-->
-					<p> - Proficient in English, Spanish, and Portuguese </p> <!-- bandera de UK, ESP Y BRE-->
-					<p> - Basic knowledge of French and Mandarin Chinese </p> <!-- bandera de FR Y CHIN-->
+					<p> - Proficient in English, Spanish, and Portuguese <img src="./images/logo-proficient.svg" class="icono"> </p> <!-- bandera de UK, ESP Y BRE-->
+					<p> - Basic knowledge of French and Mandarin Chinese <img src="./images/logo-basic.svg" class="icono"> </p> <!-- bandera de FR Y CHIN-->
 				</div>
 			</div>
 
@@ -62,7 +62,7 @@
 		<div class="screen -education">
 			<h1 class="title"> EDUCATION </h1>
 			<img src="./images/timeline.svg" id="timeline">
-			<div class="txt">
+			<div class="txt -item">
 				<div class="item">
 					<p> <Strong>High School Diploma in Social Sciences and Humanities </Strong><br>
 						Escuela Argentina Modelo - Bs. As., Argentina </p>
@@ -79,26 +79,139 @@
 
 		<div class="screen -hobbies"> 
 			<h1 class="title"> HOBBIES & PASSIONS </h1>
-			<div class="item-top">
+			
+			<div class="item-left">
 				<div id="welfare"> 
 					<img src="./images/hobbies-gym.png" class="pic-hobbies">
+					<p><strong> Pyshical Wellness</strong> <br> 
+						Taking care of my physical well-being is a cornerstone of my lifestyle. 
+						I enjoy working out or going for long walks to unwind. Staying consistent helps me 
+						feel strong and focused, while also serving as a way to de-stress and recharge 
+						both mentally and physically.
+					</p>
 				</div>
-				<div id="beauty"> 
-					<img src="./images/hobbies-beauty.jpg" class="pic-hobbies">
-				</div>
-			</div>
-			<div class="item-bottom"> 
 				<div id="tech"> 
 					<img src="./images/hobbies-tech.jpg" class="pic-hobbies">
+					<p><strong> Tech</strong> <br> 
+						Technology fascinates me with its constant evolution and potential to change the way we 
+						live. I love exploring new gadgets, apps, and innovations that improve productivity and 
+						make life more exciting.
+					</p>
+				</div>
+			</div>
+			
+			<div class="item-right"> 
+				<div id="beauty"> 
+					<img src="./images/hobbies-beauty.jpg" class="pic-hobbies">
+					<p><strong> Beauty </strong> <br> 
+						Exploring beauty is one of my creative outlets. I have so much fun experimenting with skincare and 
+						makeup, discovering new products, and learning how they can enhance confidence and 
+						individuality.
+					</p>
 				</div>
 				<div id="books"> 
 					<img src="./images/hobbies-books.jpg" class="pic-hobbies">
+					<p><strong> Books </strong> <br>
+						Books are my escape and my greatest source of knowledge. I love diving into different genres, 
+						from fiction that sparks my imagination to non-fiction that deepens my understanding of the world.
+					</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="screen -socials"> 
 			<h1 class="title"> CONTACT INFORMATION</h1>
+
+			<form action="#">
+				<h2> CONTACT ME! </h2>
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="fname" class="form-control" placeholder="Your First Name">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="lname" class="form-control" placeholder="Your Last Name">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="email" class="form-control" placeholder="Your Email Address">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Send Message" class="btn btn-primary">
+				</div>
+
+			</form>	
+			<div class="socials">
+				<h3> Or here you have my socials: </h3>
+				<div class="btn-socials">
+					<a href="https://github.com/larabarijhoff" class="github-icon" target="_blank" aria-label="GitHub">
+						<!-- SVG del icono de GitHub -->
+						<svg width="90" height="91" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_i_38_10)">
+							<path d="M58.5 9C51.9996 9 45.5628 10.2459 39.5572 12.6665C33.5516 15.0871 28.0947 18.635 23.4982 23.1077C14.2152 32.1408 9 44.3922 9 57.1669C9 78.4566 23.2065 96.5192 42.858 102.925C45.333 103.311 46.125 101.818 46.125 100.517V92.3768C32.4135 95.2669 29.493 85.9225 29.493 85.9225C27.216 80.3351 23.9985 78.842 23.9985 78.842C19.494 75.8556 24.345 75.9519 24.345 75.9519C29.295 76.2891 31.9185 80.9131 31.9185 80.9131C36.225 88.2345 43.5015 86.067 46.323 84.911C46.7685 81.7801 48.0555 79.6608 49.4415 78.4566C38.4525 77.2524 26.919 73.1101 26.919 54.7585C26.919 49.412 28.8 45.1251 32.0175 41.7053C31.5225 40.5011 29.79 35.4918 32.5125 28.9892C32.5125 28.9892 36.6705 27.6887 46.125 33.9023C50.0355 32.8426 54.2925 32.3128 58.5 32.3128C62.7075 32.3128 66.9645 32.8426 70.875 33.9023C80.3295 27.6887 84.4875 28.9892 84.4875 28.9892C87.21 35.4918 85.4775 40.5011 84.9825 41.7053C88.2 45.1251 90.081 49.412 90.081 54.7585C90.081 73.1583 78.498 77.2043 67.4595 78.4085C69.2415 79.9016 70.875 82.8398 70.875 87.3193V100.517C70.875 101.818 71.667 103.359 74.1915 102.925C93.843 96.471 108 78.4566 108 57.1669C108 50.8415 106.72 44.5781 104.232 38.7342C101.744 32.8903 98.0983 27.5805 93.5018 23.1077C88.9053 18.635 83.4484 15.0871 77.4428 12.6665C71.4372 10.2459 65.0004 9 58.5 9Z" />
+							</g>
+							<defs>
+							<filter id="filter0_i_38_10" x="9" y="9" width="99" height="98" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+								<feOffset dy="4" />
+								<feGaussianBlur stdDeviation="2" />
+								<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+								<feBlend mode="normal" in2="shape" result="effect1_innerShadow_38_10" />
+							</filter>
+							</defs>
+						</svg>
+					</a>
+					<a href="mailto:lara.barijhoff1@gmail.com" class="gmail-icon" aria-label="Gmail">
+						<!-- SVG del icono de Gmail -->
+						<svg width="101" height="102" viewBox="0 0 101 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_38_2)">
+							<g filter="url(#filter0_i_38_2)">
+							<path d="M77.3281 0H23.6719C10.5983 0 0 10.7032 0 23.9062V78.0938C0 91.2968 10.5983 102 23.6719 102H77.3281C90.4017 102 101 91.2968 101 78.0938V23.9062C101 10.7032 90.4017 0 77.3281 0Z" fill="#E5E5E5"/>
+							</g>
+							<path d="M16.4267 80.8983H28.9799V50.1098L11.0469 36.5271V75.4652C11.0469 78.4714 13.459 80.8983 16.4267 80.8983Z" fill="#4D4D4D"/>
+							<path d="M72.0197 80.8984H84.5733C87.55 80.8984 89.9531 78.4624 89.9531 75.4654V36.5269L72.0197 50.11" fill="#C1C1C1"/>
+							<path d="M72.0197 26.5659V50.11L89.9531 36.5272V29.282C89.9531 22.5632 82.3584 18.7326 77.0413 22.7624" fill="white"/>
+							<path d="M28.9803 50.1099V26.5662L50.5 42.8651L72.0197 26.5654V50.1095L50.5 66.4096" fill="#7F7F7F"/>
+							<path d="M11.0469 29.2823V36.5267L28.9799 50.1098V26.5661L23.9587 22.7626C18.6325 18.7328 11.0469 22.5634 11.0469 29.2823Z" fill="#0D0D0D"/>
+						</g>
+						<defs>
+							<filter id="filter0_i_38_2" x="0" y="0" width="101" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+							<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+							<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+							<feOffset dy="4"/>
+							<feGaussianBlur stdDeviation="2"/>
+							<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+							<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+							<feBlend mode="normal" in2="shape" result="effect1_innerShadow_38_2"/>
+							</filter>
+							<clipPath id="clip0_38_2">
+							<rect width="101" height="102" fill="white"/>
+							</clipPath>
+						</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
 			
 		</div>
 
