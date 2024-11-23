@@ -246,7 +246,7 @@ textarea:focus {
     animation-delay: 0.2s; 
 }
 
-@media (max-width:700px) {
+@media (max-width:480px) {
     .screen{
         flex-direction: column;
         height: auto;
