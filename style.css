@@ -261,9 +261,7 @@ p,h3{
 
 @media (max-width:760px) {
     p{
-        font-size: 0.5em;
         margin: 0;
-        padding: 0;
     }
     .pic-hobbies{
         margin: 0;
@@ -271,5 +269,8 @@ p,h3{
     .item-right, .item-left{
         width: auto;
         margin: 10px 0;
+    }
+    .form{
+        width: 300px;
     }
 }
