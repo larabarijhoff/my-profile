@@ -1,3 +1,5 @@
+@import url("components/form.css");
+
 body{
     background-color: rgb(74, 74, 74);
 }
@@ -35,7 +37,7 @@ p,h3{
     padding: 15px;
 }
 
-.screen{
+.card{
     background-color: rgb(229 229 229);
     height: 95vh; 
     display: flex;
@@ -92,7 +94,7 @@ p,h3{
     margin: 0 5px;
 }
 
-.card{
+.card-small{
     margin: 20px;
     padding: 30px;
     box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
@@ -143,56 +145,6 @@ p,h3{
     margin-right: 50px;
 }
 
-form {
-    width: 500px;
-}
-  
-.form-group {
-    margin-bottom: 15px;
-}
-
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #dcdcdc;
-    font-size: 20px;
-    font-family: "Jost", Roboto, sans-serif;
-    box-sizing: border-box;
-    box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
-    color: #333;
-}
-
-textarea {
-    resize: none;
-}
-
-input[type="text"]::placeholder,
-textarea::placeholder {
-    color: #ccc;
-}
-
-input[type="submit"] {
-    background-color:  rgb(115, 127, 94);
-    color: #fff;
-    border: none;
-    box-shadow: 4px 5px rgba(173, 172, 172, 0.2);
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 22px;
-    font-family:"Marcellus", Roboto, sans-serif ;
-}
-
-input[type="submit"]:hover {
-    background-color:rgb(67, 74, 55) ;
-}
-
-input[type="text"]:focus, 
-textarea:focus {
-  border: 2px solid rgb(115, 127, 94);
-  outline: none; 
-  box-shadow: 0 0 5px rgba(67, 74, 55, 0.5); 
-}
 
 .github-icon{
     margin: 0 30px;
@@ -245,9 +197,9 @@ textarea:focus {
     opacity: 0; 
     animation-delay: 0.2s; 
 }
-
-@media (max-width:800px) {
-    .screen{
+/* Responsive Design */
+@media (max-width:960px) {
+    .card{
         flex-direction: column;
         height: auto;
         padding: 20px;
@@ -298,6 +250,16 @@ textarea:focus {
     }
     .pic-hobbies{
         width: 100px;
+        margin: 0;
     }
     
+}
+
+@media (max-width:760px) {
+    p{
+        font-size: x-small;
+    }
+    .pic-hobbies{
+        margin: 0;
+    }
 }

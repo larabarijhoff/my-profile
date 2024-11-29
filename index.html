@@ -13,10 +13,9 @@
 	<link href="style.css" rel="stylesheet"> 
 </head>
 <body>
-	<!-- para class es element-design-->
 	<div class="container"> 
 
-		<div class="screen -landing">
+		<div class="card -landing">
 			<div class="txt"> 
 				<h1 id="title-name"> Hi, <br> it's Lara Barijhoff </h1>
 				<p class="txt-quote">	
@@ -27,7 +26,7 @@
 			<img src="./images/profile-photo.jpg" alt="Photo of Lara" id="profile-pic">
 		</div>
 
-		<div class="screen -aboutme"> 
+		<div class="card -aboutme"> 
 			<h1 class="title"> ABOUT ME</h1>
 			<div class="txt">
 				<h2 id="full-name"> My full name is Lara Stefania Barijhoff</h2>
@@ -43,15 +42,15 @@
 			</div>
 		</div>
 		
-		<div class="screen -skills"> 
+		<div class="card -skills"> 
 			<h1 class="title"> SKILSS </h1>
 			<div class="txt">
-				<div class="card">
+				<div class="card-small">
 					<h2> <img src="./images/symbol-code.svg" alt="icono" class="icono"> Code </h2> <!-- icono de codigo-->
 					<p> - Experienced in Python, C++ and Figma  <img src="./images/logo-experienced.svg" class="icono"> </p>
 					<p> - Competent in HTML, CSS and JavaScript <img src="./images/logo-competent.svg" class="icono"></p>
 				</div>
-				<div class="card"> 
+				<div class="card-small"> 
 					<h2> <img src="./images/symbol-language.svg" alt="icono" class="icono"> Languages</h2> <!-- icono de idiomas-->
 					<p> - Proficient in English, Spanish, and Portuguese <img src="./images/logo-proficient.svg" class="icono"> </p> <!-- bandera de UK, ESP Y BRE-->
 					<p> - Basic knowledge of French and Mandarin Chinese <img src="./images/logo-basic.svg" class="icono"> </p> <!-- bandera de FR Y CHIN-->
@@ -60,7 +59,7 @@
 
 		</div>
 
-		<div class="screen -education">
+		<div class="card -education">
 			<h1 class="title"> EDUCATION </h1>
 			<img src="./images/timeline.svg" id="timeline">
 			<div class="txt -item">
@@ -78,7 +77,7 @@
 			</div>	
 		</div>
 
-		<div class="screen -hobbies"> 
+		<div class="card -hobbies"> 
 			<h1 class="title"> HOBBIES & PASSIONS </h1>
 			
 			<div class="item-left">
@@ -120,7 +119,7 @@
 			</div>
 		</div>
 
-		<div class="screen -socials"> 
+		<div class="card -socials"> 
 			<h1 class="title"> CONTACT INFORMATION</h1>
 
 			<form action="#">
@@ -161,8 +160,7 @@
 			<div class="socials">
 				<h3> Or here you have my socials: </h3>
 				<div class="btn-socials">
-					<a href="https://github.com/larabarijhoff" class="github-icon" target="_blank" aria-label="GitHub">
-						<!-- SVG del icono de GitHub -->
+					<a href="https://github.com/larabarijhoff" class="github-icon" target="_blank" >
 						<svg width="90" height="91" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g filter="url(#filter0_i_38_10)">
 							<path d="M58.5 9C51.9996 9 45.5628 10.2459 39.5572 12.6665C33.5516 15.0871 28.0947 18.635 23.4982 23.1077C14.2152 32.1408 9 44.3922 9 57.1669C9 78.4566 23.2065 96.5192 42.858 102.925C45.333 103.311 46.125 101.818 46.125 100.517V92.3768C32.4135 95.2669 29.493 85.9225 29.493 85.9225C27.216 80.3351 23.9985 78.842 23.9985 78.842C19.494 75.8556 24.345 75.9519 24.345 75.9519C29.295 76.2891 31.9185 80.9131 31.9185 80.9131C36.225 88.2345 43.5015 86.067 46.323 84.911C46.7685 81.7801 48.0555 79.6608 49.4415 78.4566C38.4525 77.2524 26.919 73.1101 26.919 54.7585C26.919 49.412 28.8 45.1251 32.0175 41.7053C31.5225 40.5011 29.79 35.4918 32.5125 28.9892C32.5125 28.9892 36.6705 27.6887 46.125 33.9023C50.0355 32.8426 54.2925 32.3128 58.5 32.3128C62.7075 32.3128 66.9645 32.8426 70.875 33.9023C80.3295 27.6887 84.4875 28.9892 84.4875 28.9892C87.21 35.4918 85.4775 40.5011 84.9825 41.7053C88.2 45.1251 90.081 49.412 90.081 54.7585C90.081 73.1583 78.498 77.2043 67.4595 78.4085C69.2415 79.9016 70.875 82.8398 70.875 87.3193V100.517C70.875 101.818 71.667 103.359 74.1915 102.925C93.843 96.471 108 78.4566 108 57.1669C108 50.8415 106.72 44.5781 104.232 38.7342C101.744 32.8903 98.0983 27.5805 93.5018 23.1077C88.9053 18.635 83.4484 15.0871 77.4428 12.6665C71.4372 10.2459 65.0004 9 58.5 9Z" />
@@ -181,8 +179,7 @@
 							</defs>
 						</svg>
 					</a>
-					<a href="mailto:lara.barijhoff1@gmail.com" class="gmail-icon" aria-label="Gmail">
-						<!-- SVG del icono de Gmail -->
+					<a href="mailto:lara.barijhoff1@gmail.com" class="gmail-icon" target="blank">
 						<svg width="101" height="102" viewBox="0 0 101 102" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<g clip-path="url(#clip0_38_2)">
 							<g filter="url(#filter0_i_38_2)">
@@ -212,11 +209,10 @@
 						</svg>
 					</a>
 				</div>
-			</div>
-			
+			</div>	
 		</div>
-
 	</div>
+	
 </body>
 </html>
 

@@ -1,0 +1,50 @@
+form {
+    width: 500px;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 20px;
+    font-family: "Jost", Roboto, sans-serif;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 20px rgba(173, 172, 172, 0.8);
+    color: #333;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #ccc;
+}
+
+input[type="submit"] {
+    background-color:  rgb(115, 127, 94);
+    color: #fff;
+    border: none;
+    box-shadow: 4px 5px rgba(173, 172, 172, 0.2);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family:"Marcellus", Roboto, sans-serif ;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(67, 74, 55) ;
+}
+
+input[type="text"]:focus, 
+textarea:focus {
+  border: 2px solid rgb(115, 127, 94);
+  outline: none; 
+  box-shadow: 0 0 5px rgba(67, 74, 55, 0.5); 
+}
