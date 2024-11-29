@@ -48,3 +48,16 @@ textarea:focus {
   outline: none; 
   box-shadow: 0 0 5px rgba(67, 74, 55, 0.5); 
 }
+
+@media (max-width:760px) {
+    .form{
+        width: 300px;
+    }
+}
+
+@media (max-width:650px) {
+    .form{
+        width: 200px;
+    }
+}
+    

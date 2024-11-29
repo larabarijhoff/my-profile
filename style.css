@@ -28,7 +28,7 @@ p,h3{
     font-optical-sizing: auto;
     font-weight: 400;
     line-height: 1.6;
-    padding: 5px;
+    padding: 2px;
     color: rgb(143 143 143);
 }
 
@@ -252,14 +252,24 @@ p,h3{
         width: 100px;
         margin: 0;
     }
+    .item-right, .item-left{
+        width: auto;
+        margin: 10px 0;
+    }
     
 }
 
 @media (max-width:760px) {
     p{
-        font-size: x-small;
+        font-size: 0.5em;
+        margin: 0;
+        padding: 0;
     }
     .pic-hobbies{
         margin: 0;
+    }
+    .item-right, .item-left{
+        width: auto;
+        margin: 10px 0;
     }
 }
